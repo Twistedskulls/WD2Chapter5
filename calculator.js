@@ -14,3 +14,7 @@ function switchSigns()
 {
     document.getElementById('display').value = document.getElementById('display').value * -1;
 }
+function percentMe()
+{
+    document.getElementById('display').value = document.getElementById('display').value / 100;
+}
