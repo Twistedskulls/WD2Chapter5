@@ -10,3 +10,7 @@ function clearMe()
 {
     document.getElementById('display').value = '';
 }
+function switchSigns()
+{
+    document.getElementById('display').value = document.getElementById('display').value * -1;
+}
