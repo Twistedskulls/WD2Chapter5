@@ -24,7 +24,7 @@ function rememberMe()
     {
         displayMe(document.getElementById('memory').value) ;
     }
-    else if (document.getElementById('display').value !== '');
+    else if (document.getElementById('display').value != '');
 {
     document.getElementById('memory').value = 
         document.getElementById('display').value;
