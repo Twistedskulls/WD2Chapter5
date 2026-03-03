@@ -173,3 +173,11 @@ section div.about_us {
 	border-radius:15px;
 	max-width:600px;
 }
+/* form validation styles */
+input:invalid, textarea:invalid {
+	border: 2px solid orange;
+	border-radius: 5px;
+}
+input:focus:invalid, textarea:focus:invalid {
+	border: none;
+}
