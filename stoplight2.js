@@ -1,12 +1,14 @@
-function makeGreenLight ()
+function makeLight(inColor);
 {
-    document.getElementById("GreenLight").style.background = "green";
+    clearLights();
+    document.getElementById(inColor + "Light").style.background = inColor;
 }
-function makeRedLight ()
+function clearLights()
 {
-    document.getElementById("RedLight").style.background = "red";
-}
-function makeYellowLight ()
-{
-    document.getElementById("YellowLight").style.background = "yellow";
+    var lightsArr = document.getElementsByClassName("light");
+    let ndx;
+    for (ndx = 0; ndx < lightsArr.length; ndx ++)
+    {
+        lightsArr[ndx].style.backgroundColor = "";
+    }
 }
