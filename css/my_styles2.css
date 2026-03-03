@@ -178,6 +178,6 @@ input:invalid, textarea:invalid {
 	border: 2px solid orange;
 	border-radius: 5px;
 }
-input:focus:invalid, textarea:focus:invalid {
+input:focus:invalid, textarea:focus:invalid, .required {
 	border: none;
 }
