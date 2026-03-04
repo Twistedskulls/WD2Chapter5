@@ -149,6 +149,7 @@ section table tr:hover {
 
 /* modify the section and products table in it for all displays smaller than full screen */
 @media print, screen and (max-width: 768px) 
+{
 	section {
 		width: 100%;
 		text-align: center;
