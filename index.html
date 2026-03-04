@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- Developer: (your name) 
-        	Start Date: (today's date) --> 
-		<title>
-			My First Web Stoplight
-		</title>
-		<link rel="stylesheet" type="text/css" href="css/light_style.css"/>
-		<script src="Javascript/stoplight.js"></script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="lightbox">
-				<div>
-					<div class="light" onmouseover="makeLight('Green')" id="GreenLight"></div>
+    <head>
+        <!-- Developer: (Judi Dupuy) 
+        	Start Date: (today's date) -->
+        <title>An Adequate Calculator</title>
+		<link rel="stylesheet" type="text/css" href="css/calculator.css" media="screen" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="Javascript/calculator.js"></script>
+    </head>
+    <body>
+		<header>
+			<h1>
+    			A Calculator
+    		</h1>
+		</header>
+		<section>
+			<div id="calculator">
+				<div id="display_container">
+					<input type="text" id="display" name="display" placeholder="0">
+					<input type="hidden" id="memory" name="memory">
 				</div>
-				<div>
-					<div class="light" onmouseover="makeLight('Yellow')" id="YellowLight"></div>
-				</div>
-				<div>
-					<div class="light" onmouseover="makeLight('Red')" id="RedLight"></div>
+				<div id="inputs" class="keypad">
+					<input type="button" id="C" name="C" value="C" onclick="clearMe()">
+					<input type="button" id="sign_switch" name="sign_switch" value="+/-" onclick="switchSigns()">
+					<input type="button" id="percent" name="percent" value="%" onclick="percentMe()">
+					<input type="button" id="divide" name="divide" value="/" onclick="displayMe(this.value)">
+					<input type="button" id="7" name="7" value="7" onclick="displayMe(this.value)">
+					<input type="button" id="8" name="8" value="8" onclick="displayMe(this.value)">
+					<input type="button" id="9" name="9" value="9" onclick="displayMe(this.value)">
+					<input type="button" id="multiply" name="multiply" value="*" onclick="displayMe(this.value)">
+					<input type="button" id="4" name="4" value="4" onclick="displayMe(this.value)">
+					<input type="button" id="5" name="5" value="5" onclick="displayMe(this.value)">
+					<input type="button" id="6" name="6" value="6" onclick="displayMe(this.value)">
+					<input type="button" id="subtract" name="subtract" value="-" onclick="displayMe(this.value)">
+					<input type="button" id="1" name="1" value="1" onclick="displayMe(this.value)">
+					<input type="button" id="2" name="2" value="2" onclick="displayMe(this.value)">
+					<input type="button" id="3" name="3" value="3" onclick="displayMe(this.value)">
+					<input type="button" id="add" name="add" value="+" onclick="displayMe(this.value)">
+					<input type="button" id="0" name="0" value="0" onclick="displayMe(this.value)">
+					<input type="button" id="." name="." value="." onclick="displayMe(this.value)">
+					<input type="button" id="Mem" name="Mem" value="M" onclick="rememberMe()">
+					<input type="button" id="equals" name="equals" value="=" onclick="calculate()">
 				</div>
 			</div>
-			<div class="lightpost">
-			
-			</div>
-			<div class="button-container">
-				<div class="button-item">
-					<input type=button value="Red" onclick="makeRedLight()">
-				</div>
-				<div class="button-item">
-					<input type=button value="Yellow" onclick="makeYellowLight()">
-				</div>
-				<div class="button-item">
-					<input type=button value="Green" onclick="makeGreenLight()">
-				</div>
-			</div>
-			<div class="lightpost">
-			
-			</div>
-			<div id="base">
-			
-			</div>
-		</div>
-	</body>
+		</section>
+
+		<footer>
+			Copyright &copy; 2023 
+		</footer>
+    </body>
 </html>

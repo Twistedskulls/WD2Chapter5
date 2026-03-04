@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Developer: (your name) 
+		<!-- Developer: (Judi Dupuy) 
         	Start Date: (today's date) --> 
 		<title>
 			My First Web Stoplight
 		</title>
-		<link rel="stylesheet" type="text/css" href="WD2Chapter5/light_style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/light_style.css"/>
 		<script src="Javascript/stoplight.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<div id="lightbox">
 				<div>
-					<div class="light" id="GreenLight"></div>
+					<div class="light" onmouseover="makeLight('Green')" id="GreenLight"></div>
 				</div>
 				<div>
-					<div class="light" id="YellowLight"></div>
+					<div class="light" onmouseover="makeLight('Yellow')" id="YellowLight"></div>
 				</div>
 				<div>
-					<div class="light" id="RedLight"></div>
+					<div class="light" onmouseover="makeLight('Red')" id="RedLight"></div>
 				</div>
 			</div>
 			<div class="lightpost">
@@ -27,13 +27,13 @@
 			</div>
 			<div class="button-container">
 				<div class="button-item">
-					<input type=button value="Red">
+					<input type=button value="Red" onclick="makeRedLight()">
 				</div>
 				<div class="button-item">
-					<input type=button value="Yellow">
+					<input type=button value="Yellow" onclick="makeYellowLight()">
 				</div>
 				<div class="button-item">
-					<input type=button value="Green">
+					<input type=button value="Green" onclick="makeGreenLight()">
 				</div>
 			</div>
 			<div class="lightpost">
