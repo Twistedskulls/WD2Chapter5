@@ -173,7 +173,7 @@ section div.about_us {
 	max-width:600px;
 }
 /* form validation styles */
-input:invalid, textarea:invalid {
+input:invalid, textarea:invalid .required {
 	border: 2px solid orange;
 	border-radius: 5px;
 }
