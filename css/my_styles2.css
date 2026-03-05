@@ -157,7 +157,6 @@ section table tr:hover {
 	section table {
 		margin: 10px auto 20px auto;
 	}
-}
 
 /* style for the form background */
 .light_blue_background{
@@ -172,4 +171,12 @@ section div.about_us {
 	background-color: rgb(240,248,255);
 	border-radius:15px;
 	max-width:600px;
+}
+/* form validation styles */
+input:invalid, textarea:invalid {
+	border: 2px solid orange;
+	border-radius: 5px;
+}
+input:focus:invalid, textarea:focus:invalid {
+	border: none;
 }
